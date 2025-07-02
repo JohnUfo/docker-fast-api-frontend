@@ -11,5 +11,3 @@ jobs:
         uses: actions/checkout@v4
       - name: Build image
         run: docker build ./api/ -t muydinovs/devops-qr-code-api:latest
-      - name: push iumage to docker hub
-        run: docker push muydinovs/devops-qr-code-api:latest
