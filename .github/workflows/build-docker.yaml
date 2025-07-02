@@ -10,4 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build image
-        run: docker build ./api/ -t muydinovs/devops-qr-code-api:latest
+        run: |
+            docker build ./api/ -t muydinovs/devops-qr-code-api:latest
+            docker build ./front-end-nextjs/ -t muydinovs/devops-qr-code-frontend:latest
